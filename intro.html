@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/intro.css" />
+    <style>
+      @keyframes show {
+        100% {
+          transform: translateY(0%);
+          background-color: #f1e8a7;
+        }
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: #aed09e;
+      }
+      .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+      }
+      .option-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+      }
+      .option-link {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+        width: 300px;
+        height: 60px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #a8896c;
+        font-weight: bold;
+        font-size: 1.2em;
+        transform: translateY(300%);
+        animation: show 1.5s;
+        animation-fill-mode: forwards;
+      }
+      .website {
+        animation-duration: 2s;
+      }
+      .option-link:hover {
+        box-shadow: 0px 5px 0px #a8896c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <ul class="option-list">
+        <li class="option">
+          <a
+            href="https://kangdh.notion.site/KANG-DOO-HEE-14725123aa1f40289bfee919dade779d"
+            class="option-link notion"
+            >Notion 바로가기</a
+          >
+          <a href="" class="option-link website">Web site 바로가기</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
